@@ -39,7 +39,7 @@
   };
 
   # Configure console keymap
-  console.keyMap = "uk"
+  console.keyMap = "uk";
 
   environment.enableAllTerminfo = true;
 
