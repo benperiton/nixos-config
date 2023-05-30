@@ -10,10 +10,10 @@
     useDHCP = true;
   };
 
-  boot = {
-    kernelPackages = pkgs.linuxKernel.packages.linux_zen;
-    binfmt.emulatedSystems = [ "aarch64-linux" "i686-linux" ];
-  };
+  # Bootloader.
+  boot.loader.grub.enable = true;
+  boot.loader.grub.device = "/dev/sda";
+  boot.loader.grub.useOSProber = true;
   
   system.stateVersion = "22.05";
 }
