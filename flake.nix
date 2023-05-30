@@ -66,6 +66,9 @@
         vimes = mkNixos [ ./hosts/vimes ];
 
         # Servers
+
+        # Misc.
+        vbox = mkNixos [ ./hosts/vbox ];
       };
 
       # Standalone home-manager configuration entrypoint
@@ -76,6 +79,9 @@
 
         # Laptops
         "ben@vimes" = mkHome [ ./home/ben/vimes.nix ] nixpkgs.legacyPackages."x86_64-linux";
+
+        # Misc.
+        "ben@vbox" = mkHome [ ./home/ben/vbox.nix ] nixpkgs.legacyPackages."x86_64-linux";
       };
     };
 }
