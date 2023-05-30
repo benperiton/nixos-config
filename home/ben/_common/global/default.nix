@@ -1,4 +1,4 @@
-{ inputs, outputs, ... }:
+{ inputs, lib, pkgs, config, outputs, ... }:
 {
   nixpkgs = {
     overlays = builtins.attrValues outputs.overlays;
