@@ -1,5 +1,4 @@
 { inputs, outputs, ... }:
 {
-  imports = [
-    ./global
-    ];
+  imports = [ ./global ];
+}
