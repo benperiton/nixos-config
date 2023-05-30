@@ -1,4 +1,4 @@
 { inputs, outputs, ... }:
 {
-  imports = [ ./global ];
+  imports = [ ./_common/global ];
 }
