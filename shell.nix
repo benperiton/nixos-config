@@ -28,8 +28,9 @@
 
   services.gpg-agent = {
     enable = true;
-    defaultCacheTtl = 1800;
     enableSshSupport = true;
+    sshKeys = [ "B2020F074D9C4B4D7AB39E50B5E24DAA59EE9968" ];
+    pinentryFlavor = "curses";
+    enableExtraSocket = true;
   };
-
 }
