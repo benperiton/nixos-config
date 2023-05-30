@@ -8,6 +8,7 @@
 
     # Misc flakes
     impermanence.url = "github:nix-community/impermanence";
+    sops-nix.url = "github:mic92/sops-nix";
     
     hyprland.url = "github:hyprwm/hyprland";
     hyprwm-contrib.url = "github:hyprwm/contrib";
