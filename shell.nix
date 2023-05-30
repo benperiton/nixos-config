@@ -18,21 +18,10 @@
       home-manager
       git
 
+      ssh-to-pgp
+      sops-import-keys-hook
+      sops-init-gpg-key
       sops
-      ssh-to-age
-      gnupg
-      pinentry
-      pinentry-curses
-      age
     ];
-  };
-
-  services.gpg-agent = {
-    enable = true;
-    enableSshSupport = true;
-    sshKeys = [ "B2020F074D9C4B4D7AB39E50B5E24DAA59EE9968" ];
-    pinentryFlavor = "curses";
-    enableScDaemon = true;
-    #enableExtraSocket = true;
   };
 }
