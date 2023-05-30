@@ -23,7 +23,8 @@ in
     ];
 
     #openssh.authorizedKeys.keys = [ (builtins.readFile ../../../../home/ben/ssh.pub) ];
-    passwordFile = config.sops.secrets.ben-password.path;
+    #passwordFile = config.sops.secrets.ben-password.path;
+    password = "bob";
     packages = [ pkgs.home-manager ];
   };
 
