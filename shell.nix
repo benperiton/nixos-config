@@ -21,6 +21,7 @@
       sops
       ssh-to-age
       gnupg
+      pinentry
       pinentry-curses
       age
     ];
@@ -31,6 +32,7 @@
     enableSshSupport = true;
     sshKeys = [ "B2020F074D9C4B4D7AB39E50B5E24DAA59EE9968" ];
     pinentryFlavor = "curses";
-    enableExtraSocket = true;
+    enableScDaemon = true;
+    #enableExtraSocket = true;
   };
 }
