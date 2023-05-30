@@ -4,6 +4,7 @@
     ./direnv.nix
     ./git.nix
     ./zsh.nix
+    ./gpg.nix
   ];
   home.packages = with pkgs; [
     comma # Install and run programs by sticking a , before them
