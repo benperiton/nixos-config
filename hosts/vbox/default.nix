@@ -3,6 +3,7 @@
     ./hardware-configuration.nix
 
     ../_common/global
+    ../_common/users/ben
   ];
 
   networking = {
